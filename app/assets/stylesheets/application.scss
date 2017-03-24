@@ -1,4 +1,9 @@
  
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "uikit"
+ @import "uikit";
+
+
+ .fixedBar{
+ 	position:fixed;
+ }
