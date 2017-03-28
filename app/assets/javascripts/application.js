@@ -16,6 +16,8 @@
 //= require react
 //= require react_ujs
 //= require components
-//= require_tree .
+//= require uikit-icons
+//= require uikit-icons.min
 //= require uikit
-//= require bootstrap-sprockets
+//= require uikit.min
+//= require_tree .

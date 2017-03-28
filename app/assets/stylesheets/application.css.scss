@@ -1,0 +1,62 @@
+
+@import "uikit-rtl.css";
+@import "uikit-rtl.min.css";
+@import "uikit.css";
+@import "uikit.min.css";
+
+html {
+  background-color:  #F5F5F5;
+}
+
+.wrapper{
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.image{
+  position: absolute;
+  left: 600px;
+  bottom: 183px;
+}
+.navigation{
+  float: right;
+}
+.navnav{
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.content{
+  padding: 2rem 0 6rem 0;
+  margin-left: 60px;
+  margin-top: 220px;
+  }
+.title, .sub_title{
+    color:   #696969;
+    text-align: left;
+  }
+.title{
+  font-size: 3.5rem;
+  margin: 0;
+}
+.sub_title{
+  font-size: 1.35rem;
+  margin: 0 auto 2rem auto;
+}
+#banner{
+  background-size: cover;
+  header{
+    padding: 2rem 0;
+  }
+  #logo{
+    color: #1E90FF;
+    font-weight: 700;
+    font-size: 1.7rem;
+    float: left;
+    margin: 0;
+  }
+}
+
+ .fixedBar{
+ 	position:fixed;
+ }
