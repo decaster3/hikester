@@ -13,29 +13,20 @@
 ActiveRecord::Schema.define(version: 20170408145262) do
 
   create_table "comments", force: :cascade do |t|
-    t.string   "comment"
-    t.integer  "grade"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "profile_id"
-    t.index ["profile_id"], name: "index_comments_on_profile_id"
+    t.string  "comment"
+    t.integer "grade"
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "facebook"
-    t.string   "phone_number"
-    t.string   "gender"
-    t.date     "date_of_birth"
-    t.string   "telegram"
-    t.string   "whatsapp"
-    t.string   "address"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.integer  "user_id"
-    t.index ["user_id"], name: "index_profiles_on_user_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "facebook"
+    t.string "gender"
+    t.string "date_of_birth"
+    t.string "telegram"
+    t.string "whatsapp"
+    t.string "address"
   end
 
   create_table "users", force: :cascade do |t|
@@ -51,21 +42,16 @@ ActiveRecord::Schema.define(version: 20170408145262) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "access_token"
-    t.string   "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "verification_levels", force: :cascade do |t|
-    t.integer  "rating"
-    t.integer  "number_verified"
-    t.integer  "email_verified"
-    t.integer  "fb_verified"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.integer  "profile_id"
-    t.index ["profile_id"], name: "index_verification_levels_on_profile_id"
+    t.integer "rating"
+    t.string  "phone"
+    t.string  "email"
+    t.string  "whatsapp"
+    t.string  "facebook"
   end
 
 end

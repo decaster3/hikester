@@ -1,3 +1,3 @@
 class Comment < ApplicationRecord
-	belongs_to :profile
+	belongs_to :profile, index: true
 end
