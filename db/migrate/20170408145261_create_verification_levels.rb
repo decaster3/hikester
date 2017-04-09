@@ -1,4 +1,4 @@
-class VerificationCreate < ActiveRecord::Migration[5.0]
+class CreateVerificationLevels < ActiveRecord::Migration[5.0]
   def change
   	 create_table :verification_levels do |t|
        t.integer :rating
