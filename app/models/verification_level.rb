@@ -1,0 +1,2 @@
+class VerificationLevel < ApplicationRecord
+end
