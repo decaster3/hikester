@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'thin'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'faker'
